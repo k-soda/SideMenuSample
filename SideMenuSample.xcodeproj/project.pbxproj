@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		502D2ADA21BEC51900312E82 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D2AD921BEC51900312E82 /* Interactor.swift */; };
 		50B62B4121BD787600F96913 /* BaseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B62B4021BD787600F96913 /* BaseViewController.storyboard */; };
 		50B62B4321BD789500F96913 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B62B4221BD789500F96913 /* BaseViewController.swift */; };
 		50B62B4521BD78BC00F96913 /* MenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50B62B4421BD78BC00F96913 /* MenuViewController.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		502D2AD921BEC51900312E82 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		50B62B4021BD787600F96913 /* BaseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseViewController.storyboard; sourceTree = "<group>"; };
 		50B62B4221BD789500F96913 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		50B62B4421BD78BC00F96913 /* MenuViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuViewController.storyboard; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				50B62B4221BD789500F96913 /* BaseViewController.swift */,
 				50B62B4421BD78BC00F96913 /* MenuViewController.storyboard */,
 				50B62B4621BD78D000F96913 /* MenuViewController.swift */,
+				502D2AD921BEC51900312E82 /* Interactor.swift */,
 				50B62B4821BD795700F96913 /* MenuHelper.swift */,
 				50B62B4A21BD799300F96913 /* PresentMenuAnimator.swift */,
 				50B62B4C21BD79B700F96913 /* DismissMenuAnimator.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				50B62B4D21BD79B700F96913 /* DismissMenuAnimator.swift in Sources */,
 				50B62B4921BD795700F96913 /* MenuHelper.swift in Sources */,
+				502D2ADA21BEC51900312E82 /* Interactor.swift in Sources */,
 				50D354B221A4410D0035B719 /* AppDelegate.swift in Sources */,
 				50B62B4721BD78D000F96913 /* MenuViewController.swift in Sources */,
 				50B62B4B21BD799300F96913 /* PresentMenuAnimator.swift in Sources */,

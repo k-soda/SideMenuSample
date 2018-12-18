@@ -18,11 +18,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Ur0-Ha-ibc"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hmT-ww-oHb" appends="YES" id="CWL-N7-ndj"/>
+                        </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="nzB-se-j53"/>
+                    <navigationItem key="navigationItem" id="nzB-se-j53">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="KDE-hu-tES">
+                            <connections>
+                                <action selector="didTapMenuButton:" destination="3OK-o6-3HM" id="x7K-Yb-JAF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Se0-pK-DzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="hmT-ww-oHb">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="screenEdgePanGesture:" destination="3OK-o6-3HM" id="DcE-2a-VM6"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
