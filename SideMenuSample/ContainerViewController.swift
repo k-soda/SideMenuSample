@@ -10,23 +10,23 @@ import UIKit
 
 final class ContainerViewController: UIViewController {
     
-    enum MenuState {
+    fileprivate enum MenuState {
         case collapsed
         case expanded
     }
     
-    let menuWidthRatio: CGFloat = 0.7
-    let menuAnimationTreshold: CGFloat = 0.3
+    private let menuWidthRatio: CGFloat = 0.7
+    private let menuAnimationTreshold: CGFloat = 0.3
     
-    let menuViewController = MenuViewController.instantiate()
-    let baseViewController =  BaseViewController.instantiate()
+    private let menuViewController = MenuViewController.instantiate()
+    private let baseViewController =  BaseViewController.instantiate()
 
-    lazy var baseNavigationController = UINavigationController(rootViewController: baseViewController)
+    private lazy var baseNavigationController = UINavigationController(rootViewController: baseViewController)
     
-    var menuState: MenuState = .collapsed
+    private var menuState: MenuState = .collapsed
     
-    var menuScreenEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer!
-    var menuPanGestureRecognizer: UIPanGestureRecognizer!
+    private var menuScreenEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer!
+    private var menuPanGestureRecognizer: UIPanGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
